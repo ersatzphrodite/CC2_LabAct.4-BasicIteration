@@ -15,7 +15,7 @@ pairs = []
 for i in range(len(numbers)):
     for j in range(i + 1, len(numbers)):
         if numbers[i] + numbers[j] == 0:
-            #   pair_found = True (if not pair_found is no longer used so this serves no purpose.)
+            #   pair_found = True (if not pair_found is no longer in use so this serves no purpose.)
             #   break   (Removed statement after the "Pair found" message to continue checking for other pairs.)
             pairs.append((numbers[i], numbers[j]))
             #   Used pairs.append to store pairs in a list instead of multiple line output in my initial submission.
