@@ -13,7 +13,7 @@ pair_found = False
 for i in range(len(numbers)):
     for j in range(i + 1, len(numbers)):
         if numbers[i] + numbers[j] == 0:
-            print(f"Pair/s found: ({numbers[i]}, {numbers[j]})")
+            print(f"Pair/s found: ({numbers[i]}, {numbers[j]})")    # Change output from multiple lines to list.
             pair_found = True
             #   Removed the break statement after the "Pair found" message to continue checking for other pairs.
 
