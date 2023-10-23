@@ -1,5 +1,3 @@
-# SET B - Macalanda
-
 numbers = []
 
 print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩ INPUT 7 NUMBERS: ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
