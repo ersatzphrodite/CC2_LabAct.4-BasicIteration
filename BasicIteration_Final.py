@@ -1,17 +1,20 @@
+# SET B - Macalanda
+
 numbers = []
 
-print("▩▩▩▩▩▩▩▩▩▩▩▩▩ INPUT 7 NUMBERS: ▩▩▩▩▩▩▩▩▩▩▩▩▩")  # Print outside of loop to only ask for input once.
+print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩ INPUT 7 NUMBERS: ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
+# Print outside of loop to only ask for input once.
 
 for i in range(7):  # Only ask for 7 inputs.
     while True:
         num = int(input(f"✔ "))  # Changed "Enter number:" to check mark (✔) to avoid repetition of print statement.
-        if num not in numbers:  # Check if num is not already in the set.
+        if num not in numbers:  # Checks if num is not already in the set.
             numbers.append(num)
             break  # Stops when a unique number is entered.
         else:
             print("You've already entered that number. Please try again.")
 
-print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
+print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
 
 print("Numbers =", numbers)
 print("Which pair/s of numbers have the sum of zero?")
@@ -39,10 +42,10 @@ for i in range(len(numbers)):
     #   print("Pairs found:", pairs)    # Executes if pairs list = True (not empty).
 
 if len(pairs) == 1:  # Checks if there's exactly one pair in the pairs list.
-    print("✔ Pair found:", pairs[0])  # Prints single pair with "Pair found:".
+    print("✔ The pair", pairs[0], "has a sum of zero.")
 elif pairs:  # Checks if there are multiple pairs.
-    print("✔ Pairs found:", pairs)
+    print("✔ The pairs", pairs, "have a sum of zero.")
 else:
-    print("✔ No pair has the sum of zero.")  # Executes if pairs list = False (empty).
+    print("✔ No existing pair has a sum of zero.")  # Executes if pairs list = False (empty).
 
-print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
+print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
