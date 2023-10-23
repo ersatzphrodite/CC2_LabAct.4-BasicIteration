@@ -27,7 +27,7 @@ for i in range(len(numbers)):
         #   Figure out how to remove loop in output if there are no pairs.
         #   Solution: moved if not pair_found outside the inner loop.
 
-if pairs:   # Checks if the pairs list is not empty. Works better than if not pair_found.
+if pairs:   # Checks if the pairs list is not empty. Easier to understand than if not pair_found.
     print("Pairs found:", pairs)    # Executes if pairs list = True (not empty).
 else:
     print("No pair has the sum of 0.")  # Executes if pairs list = False (empty).
