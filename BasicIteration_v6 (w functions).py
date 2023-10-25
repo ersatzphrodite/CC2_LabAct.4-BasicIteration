@@ -52,4 +52,4 @@ def main():
 
 if __name__ == "__main__":  # Ensures that the main function is executed when the script is run as the main program.
     main()
-    #   The main function contains existing code for input, processing, and output.
+    #   The main function contains existing code for processing, and output.
