@@ -3,9 +3,9 @@ numbers = []
 print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩ INPUT UP TO 7 NUMBERS: ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
 #   Print outside of loop to only ask for input once.
 
-max_num = 7  # Set the maximum number of inputs
+max_input = 7  # Set the maximum number of inputs
 #   while True: - irrelevant/if I keep it, `Enter` doesn't break the loop as intended.
-for i in range(max_num):  # Only ask for up to 7 inputs.
+for i in range(max_input):  # Only ask for up to 7 inputs.
     num = input(f"✔ Enter an integer (or press Enter to finish): ")
 #   num = int(input(f"✔ "))
     # Changed "Enter number:" to check mark (✔) to avoid repetition of print statement.
@@ -21,7 +21,7 @@ for i in range(max_num):  # Only ask for up to 7 inputs.
     except ValueError:
         print("Invalid input. Please enter a valid number or press Enter to finish input.")
 
-    if len(numbers) >= max_num:
+    if len(numbers) >= max_input:
         print("You've reached the maximum number of inputs (7).")
         break
 
@@ -60,4 +60,3 @@ else:
     print("✔ No existing pair has a sum of zero.")  # Executes if pairs list = False (empty).
 
 print("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩")
-
